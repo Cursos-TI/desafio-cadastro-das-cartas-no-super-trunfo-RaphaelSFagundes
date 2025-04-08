@@ -1,73 +1,89 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     // Variáveis da carta 1    
     char letra;
-    char codcarta;
+    int codcarta;
     char nomecidade[50];
-    int população;
+    int populacao;
     float area;
     float PIB;
     int ptturisticos;
 
-
     // Variáveis da carta 2
-
     char letra2;
-    char codcarta2;
+    int codcarta2;
     char nomecidade2[50];
-    int população2;
+    int populacao2;
     float area2;
     float PIB2;
     int ptturisticos2;
 
+    // CARTA 1
     printf("CARTA 1\n");
     printf("Informe uma letra entre A e H:\n");
-    scanf("%c", &letra);
-    printf("Informe código da carta de 1 a 4: \n");
+    scanf(" %c", &letra); // espaço antes do %c ignora Enter anterior
+
+    printf("Informe código da carta de 1 a 4:\n");
     scanf("%d", &codcarta);
-    printf("Informe o nome da cidade: \n");
+
+    printf("Informe o nome da cidade:\n");
     scanf("%s", nomecidade);
-    printf("Informe a população da cidade: \n");
-    scanf("%d", &população);
-    printf("Informe area da cidade:\n");
+
+    printf("Informe a população da cidade:\n");
+    scanf("%d", &populacao);
+
+    printf("Informe área da cidade:\n");
     scanf("%f", &area);
+
     printf("Informe o PIB da cidade:\n");
     scanf("%f", &PIB);
+
     printf("Informe quantidade de pontos turísticos:\n");
     scanf("%d", &ptturisticos);
-    
-    printf("CARTA 2\n");
+
+    // CARTA 2
+    printf("\nCARTA 2\n");
     printf("Informe uma letra entre A e H:\n");
-    scanf("%c", &letra2);
-    printf("Informe código da carta de 1 a 4: \n");
+    scanf(" %c", &letra2);
+
+    printf("Informe código da carta de 1 a 4:\n");
     scanf("%d", &codcarta2);
-    printf("Informe o nome da cidade: \n");
+
+    printf("Informe o nome da cidade:\n");
     scanf("%s", nomecidade2);
-    printf("Informe a população da cidade: \n");
-    scanf("%d", &população2);
-    printf("Informe area da cidade:\n");
+
+    printf("Informe a população da cidade:\n");
+    scanf("%d", &populacao2);
+
+    printf("Informe área da cidade:\n");
     scanf("%f", &area2);
+
     printf("Informe o PIB da cidade:\n");
     scanf("%f", &PIB2);
+
     printf("Informe quantidade de pontos turísticos:\n");
     scanf("%d", &ptturisticos2);
-    
-    printf("Carta 1");
+
+    // EXIBIÇÃO
+    printf("\n--- CARTA 1 ---\n");
     printf("Estado: %c\n", letra); 
-    printf("Código: %d\n",codcarta);
-    printf("Nome da Cidade: %c\n", nomecidade);
-    printf("População: %2f\n", população);
-    printf("Área: %2f km²\n", area);
-    printf( "PIB: %2f\n", PIB);
+    printf("Código: %d\n", codcarta);
+    printf("Nome da Cidade: %s\n", nomecidade);
+    printf("População: %d\n", populacao);
+    printf("Área: %.2f km²\n", area);
+    printf("PIB: %.2f\n", PIB);
     printf("Número de Pontos Turísticos: %d\n", ptturisticos);
-    printf("Carta 2");
-    printf("Estado: %c\n", letra2);
+
+    printf("\n--- CARTA 2 ---\n");
+    printf("Estado: %c\n", letra2); 
     printf("Código: %d\n", codcarta2);
-    printf("Nome da Cidade: %c\n", nomecidade2);
-    printf("População: %2f\n", população2);
-    printf("Área: %2f km²\n", area2);
-    printf("PIB: %2f\n", PIB2);
+    printf("Nome da Cidade: %s\n", nomecidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f\n", PIB2);
     printf("Número de Pontos Turísticos: %d\n", ptturisticos2);
-    
-    return 0;
+
+    return 0;    
+}
+
